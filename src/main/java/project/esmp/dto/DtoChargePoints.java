@@ -4,7 +4,7 @@ import project.esmp.Status.RegistrationStatus;
 
 
 
-/** @author Ale*/
+/** @author Alejandro*/
 
 public class DtoChargePoints  {
 
