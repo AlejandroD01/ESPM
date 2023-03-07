@@ -1,0 +1,4 @@
+git status  <ó>  git remote add origin https://github.com/AlejandroD01/ESPM.git
+git add .
+git commit -m "first commit"
+git push -u origin main
