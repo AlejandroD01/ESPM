@@ -63,6 +63,12 @@ public class ServiceImplChargePoints implements IServiceChargePoints {
         repo.delete(chargePoints);
     }
     
+    @Override
+    public DtoChargePoints optenerPuntoCargaPorId(Integer id) {
+        ChargePoints chargePoints = repo.findById(id).orElse(null);
+      return mapearDTO(chargePoints);
+    }
+    
 //    convierte entidad a DTO
     private DtoChargePoints mapearDTO(ChargePoints chargePoints) {
         DtoChargePoints dtoChargePoints = modelMapper.map(chargePoints, DtoChargePoints.class);

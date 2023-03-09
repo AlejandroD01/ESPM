@@ -34,6 +34,10 @@ public class ControllerChargePoints {
     public ResponseEntity<List<DtoChargePoints>> listarChargePoints() {
         return ResponseEntity.ok(iServiceChargePoints.listar());
     }
+    @GetMapping(path = "/{id}")
+    public ResponseEntity<DtoChargePoints> optenerChargePointsPorId(@PathVariable("id") Integer id) {
+        return ResponseEntity.ok(iServiceChargePoints.optenerPuntoCargaPorId(id));
+    }
 
     @PostMapping
     public ResponseEntity<DtoChargePoints> registrarChargePoints(@RequestBody DtoChargePoints dtoChargePoints) {

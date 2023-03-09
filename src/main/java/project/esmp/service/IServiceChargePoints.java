@@ -15,4 +15,6 @@ public interface IServiceChargePoints {
     public DtoChargePoints actualizar(DtoChargePoints dtoChargePoints, int id);
 
     public void eliminar(Integer id);
+
+    public DtoChargePoints optenerPuntoCargaPorId(Integer id);
 }
